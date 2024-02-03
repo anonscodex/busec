@@ -53,6 +53,16 @@ header .link .account {
   width: 15%;
 }
 
+header .linkin {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+header .linkin .center_link {
+  width: 60%;
+}
+
 article .tabset {
   position: relative;
 }
@@ -105,7 +115,7 @@ article .tab-panel {
 }
 
 .tab_sec {
-  margin-top: 40px;
+  margin-top: 120px;
 }
 .tab_sec h2 {
   font-size: 20px;
@@ -114,38 +124,6 @@ article .tab-panel {
   letter-spacing: 0em;
 }
 
-.banner {
-  background: url(../images/banner.jpg);
-  height: 450px;
-  margin-top: 110px;
-}
-.banner .banner_txt h1 {
-  font-family: "Merriweather", serif;
-  padding-top: 60px;
-  font-size: 80px;
-  font-weight: 700;
-  line-height: 85px;
-  color: #ffffff;
-  letter-spacing: 0.04em;
-  text-align: left;
-}
-.banner .banner_txt span {
-  font-family: "Merriweather", serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 45px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.banner .banner_txt button {
-  margin-top: 50px;
-  padding: 10px 25px;
-  background: #00838f;
-  border-radius: 5px;
-  border: 0;
-  color: #ffffff;
-  font-weight: 500;
-}
 
 .card_row .percard {
   position: relative;
@@ -159,6 +137,12 @@ article .tab-panel {
   text-decoration: none;
   color: #24272c;
 }
+
+.card_row .percard .whatsapp img {
+  width: 13%;
+  border-radius: 5px;
+}
+
 .card_row .percard img {
   width: 100%;
   border-radius: 5px;
@@ -198,7 +182,7 @@ article .tab-panel {
   width: 70px;
   padding: 5px 0px;
 }
-.card_row .percard span.discount {
+.card_row .percard span.storename {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -208,53 +192,6 @@ article .tab-panel {
   font-weight: 600;
 }
 
-.campaign {
-  background: url("../images/backdrop.jpg") no-repeat;
-  background-size: cover;
-  margin-bottom: 50px;
-  height: 500px;
-  background-position: center;
-}
-.campaign .container {
-  padding-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.campaign .container h5 {
-  opacity: 0;
-}
-.campaign img {
-  max-width: 500px;
-  width: 100%;
-}
-
-#topDeals {
-  background: rgba(0, 131, 143, 0.1215686275);
-  padding: 35px 0 0 0;
-  margin-bottom: 100px;
-}
-#topDeals .topdeal_title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-}
-#topDeals .topdeal_title h2 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-#topDeals .topdeal_title p {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: right;
-}
 
 footer {
   background: #24272c;
@@ -298,42 +235,16 @@ footer .foot h5 {
   padding: 20px;
   color: #f0eded;
 }
-footer .newsletter {
-  margin-top: 30px;
-}
-footer .newsletter p {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0em;
-}
-footer .newsletter .input_card input {
-  margin-top: 10px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  width: 65%;
-  border: 0;
-  padding: 15px;
-  outline: 0;
-}
-footer .newsletter .input_card button {
-  border: 0;
-  padding: 15px 10px;
-  width: 25%;
-  cursor: pointer;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background: #444444;
-  color: #ffffff;
-  font-weight: 500;
-}
+
+
+
 
 .search_set {
   border: 1px solid #333333;
   padding: 0 10px;
   border-radius: 5px;
   max-width: 300px;
-  margin-top: 20px;
+  margin-top: -30px;
   width: 100%;
 }
 .search_set img {
@@ -353,6 +264,9 @@ footer .newsletter .input_card button {
   .container {
     padding: 0 40px;
   }
+
+  
+  
 }
 @media (max-width: 540px) {
   .container {
@@ -364,6 +278,29 @@ footer .newsletter .input_card button {
   footer .container ul {
     width: 100%;
   }
+
+  header .linkin {
+    
+    display: none;
+    
+   
+  }
+
+  .search_set {
+    border: 1px solid #333333;
+    padding: 0 10px;
+    border-radius: 5px;
+    max-width: 300px;
+   margin-bottom: 20px;
+    width: 100%;
+    margin-right: 200px;
+    margin-top:-30px;
+  }
+
+  .tab-panel{
+    margin-top:-10px;
+  }
+  
 }
 @media (min-width: 768px) {
   .hamburger {
@@ -381,7 +318,10 @@ footer .newsletter .input_card button {
     position: absolute;
     right: 0;
     top: 0;
+    
   }
+
+  
 }
 @media (min-width: 1024px) {
   .card_row {
@@ -395,6 +335,8 @@ footer .newsletter .input_card button {
   footer .newsletter {
     width: 35%;
   }
+
+  
 }
 @media (min-width: 1200px) {
   .card_row {
@@ -405,6 +347,8 @@ footer .newsletter .input_card button {
   .card_row .percard {
     width: 22%;
   }
+
+  
 }
 @media (max-width: 768px) {
   header .link {
@@ -435,6 +379,15 @@ footer .newsletter .input_card button {
     background: #333333;
     margin: 5px;
   }
+
+  .search_set {
+    border: 1px solid #333333;
+    padding: 0 10px;
+    border-radius: 5px;
+    max-width: 300px;
+    margin-top: 10%;
+    width: 100%;
+  }
 }
 @media (max-width: 850px) {
   .account {
@@ -447,9 +400,13 @@ footer .newsletter .input_card button {
   header .link .center_link {
     width: 100% !important;
   }
+
+  
 }
 @media (max-width: 895px) {
   header .link .center_link {
     width: 75%;
   }
-}/*# sourceMappingURL=style.css.map */
+
+
+}
