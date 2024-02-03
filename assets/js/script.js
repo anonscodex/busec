@@ -1,44 +1,6 @@
  
 
 
-
-
-   
-
-  
- 
-
-
-
-
-
-
-
-
-
-
-    
-
-  
-
-
-
-
-
-
-
-
-
-      // ==================================
-
-// 1. Toggle humbugger menu;
-
-// By default, the .link tag should 
-
-// display none.
-
-// ==================================
-
 const linkmenu = document.getElementsByClassName('link')[0]
 
 const hammenu = document.querySelector('.hamburger')
@@ -67,93 +29,78 @@ hammenu.addEventListener('click', () => {
 
 })
 
-// ==================================
 
-// 2. Display products based on 
+filter("all");
 
-// All, Men or Female categories.
+function filter(c) {
 
-// ==================================
+  var x, i;
 
-//filter("all");
+  x = document.getElementsByClassName('percard')
 
-//function filter(c) {
+  if (c == "all") c = ""
 
- // var x, i;
+  for(i = 0; i < x.length; i++){
 
- // x = document.getElementsByClassName('percard')
+    removeClass(x[i], "show");
 
- // if (c == "all") c = ""
-
- // for(i = 0; i < x.length; i++){
-
-//    removeClass(x[i], "show");
-
-//    if(x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+    if(x[i].className.indexOf(c) > -1) addClass(x[i], "show");
 
     
 
- // }
+  }
 
   
 
-// }
+ }
 
  
 
-// function addClass(element, name) {
+ function addClass(element, name) {
 
-//   var i, ar1, ar2;
+   var i, ar1, ar2;
 
-//   ar1 = element.className.split(" ")
+   ar1 = element.className.split(" ")
 
-//   ar2 = name.split(" ")
+   ar2 = name.split(" ")
 
-//   for (i = 0; i < ar2.length; i++) {
+   for (i = 0; i < ar2.length; i++) {
 
-//     if(ar1.indexOf(ar2[i]) == -1){
+     if(ar1.indexOf(ar2[i]) == -1){
 
-//       element.className += " " + ar2[i]
+       element.className += " " + ar2[i]
 
-//     }
+     }
 
-//   }
+   }
 
-// }
-
- 
-
- 
+ }
 
  
 
  
 
-// function removeClass(element, name) {
-
-//   var i, ar1, ar2;
-
-//   ar1 = element.className.split(" ")
-
-//   ar2 = name.split(" ")
-
-//   for (i = 0; i < ar2.length; i++) {
-
-//   }
-
-//   element.className = ar1.join(" ");
-
-// }
+ 
 
  
 
-// ==================================
+ function removeClass(element, name) {
 
-// 2. Display products based on 
+   var i, ar1, ar2;
 
-// search keywords in the input fields.
+   ar1 = element.className.split(" ")
 
-// ==================================
+   ar2 = name.split(" ")
+
+   for (i = 0; i < ar2.length; i++) {
+
+   }
+
+   element.className = ar1.join(" ");
+
+ }
+
+
 
 document.querySelector('.search_product').addEventListener('input', filterproduct)
 
