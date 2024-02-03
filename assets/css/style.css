@@ -21,6 +21,10 @@ header {
   z-index: 99;
   box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.07);
 }
+
+header h2 {
+  color:#00a4c9;
+}
 header nav {
   display: flex;
   justify-content: space-between;
@@ -39,6 +43,11 @@ header nav ul li {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0em;
+  text-decoration: none;
+}
+li a {
+  text-decoration: none;
+  color:black;
 }
 header .link {
   width: 80%;
@@ -63,6 +72,9 @@ header .linkin .center_link {
   width: 60%;
 }
 
+.link .linkin a {
+  text-decoration: none;
+}
 article .tabset {
   position: relative;
 }
@@ -170,10 +182,10 @@ article .tab-panel {
 }
 .card_row .percard h4 .tag {
   text-align: center;
-  color: #00838f;
+  color: #00a4c9;
   width: 20%;
   font-weight: 500;
-  border: 1px solid #00838f;
+  border: 1px solid #00a4c9;
   border-radius: 5px;
   font-size: 12px;
   padding: 5px;
@@ -194,7 +206,7 @@ article .tab-panel {
 
 
 footer {
-  background: #24272c;
+  background: #00a4c9;
 }
 footer .container {
   display: flex;
