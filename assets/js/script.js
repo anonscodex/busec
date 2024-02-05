@@ -126,16 +126,20 @@ function filterproduct() {
 
       item.style.display = '';
 
+     
+
       }
 
       else{
 
         item.style.display = 'none';
 
+
       }
 
   });
 
+ 
   
 
 }
